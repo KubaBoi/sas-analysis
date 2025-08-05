@@ -1,5 +1,4 @@
 # SAS Analysis
 
-Complete analysis of `SAS (Service Access System)`.
+Complete analysis of [SAS (Service Access System)](sas.md).
 
-Everything stats with [SAS](sas.md).
