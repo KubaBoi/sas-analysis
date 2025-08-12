@@ -1,8 +1,12 @@
 # SAG (Service API Gateway)
 
+[Public API](https://github.com/KubaBoi/sag/blob/main/api/public-api.yaml)
+
 Main component of [SAS](sas.md) which manages accounts and services. 
 It is Spring Boot application with frontend generation via Thymeleaf.
 It has three modules: [AMS](#ams-account-managment-system), [APM](#apm-access-proxy-module) and [MSM](#msm-meta-service-manager).
+
+[SAS Services](./sas.md#sas-services) can communicate with internal system via gRPC.
 
 ## AMS (Account Managment System)
 
@@ -19,3 +23,8 @@ This module does not have special prefix for itself but every [SAS Service](sas.
 From client it is accessible through `/{servicePrefix}/**` prefix.
 
 ## MSM (Meta Service Manager)
+
+Module for managing [SAS Services](./sas.md#sas-services) as administrator. 
+
+It can add, edit, monitor, kill, restart, removes [SAS Services](./sas.md#sas-services).
+
